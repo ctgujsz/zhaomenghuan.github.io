@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NodeMCU ESP8266 Arduino 框架学习 | 匠心博客</title>
+    <meta name="description" content="小青年,匠心,小青年博客,匠心博客,前端开发,android,技术宅,菜鸟教程,一个神奇的博客。">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4576dbc.css" as="style"><link rel="preload" href="/assets/js/app.4d6b7a5c.js" as="script"><link rel="preload" href="/assets/js/77.f8400e8a.js" as="script"><link rel="prefetch" href="/assets/js/1.0e122235.js"><link rel="prefetch" href="/assets/js/10.7978ef40.js"><link rel="prefetch" href="/assets/js/100.3306cb58.js"><link rel="prefetch" href="/assets/js/101.82e15085.js"><link rel="prefetch" href="/assets/js/102.3bc6af75.js"><link rel="prefetch" href="/assets/js/103.67ffc75d.js"><link rel="prefetch" href="/assets/js/104.6d918ede.js"><link rel="prefetch" href="/assets/js/11.849c9a26.js"><link rel="prefetch" href="/assets/js/12.46850ae9.js"><link rel="prefetch" href="/assets/js/13.007a7c72.js"><link rel="prefetch" href="/assets/js/14.84729b84.js"><link rel="prefetch" href="/assets/js/15.5463a28a.js"><link rel="prefetch" href="/assets/js/16.47267e79.js"><link rel="prefetch" href="/assets/js/17.e275f38c.js"><link rel="prefetch" href="/assets/js/18.b4f6139e.js"><link rel="prefetch" href="/assets/js/19.8c8cc1a2.js"><link rel="prefetch" href="/assets/js/2.46ce0f09.js"><link rel="prefetch" href="/assets/js/20.cb24504f.js"><link rel="prefetch" href="/assets/js/21.e579f748.js"><link rel="prefetch" href="/assets/js/22.72474b7d.js"><link rel="prefetch" href="/assets/js/23.72645e4f.js"><link rel="prefetch" href="/assets/js/24.964de388.js"><link rel="prefetch" href="/assets/js/25.93ac939a.js"><link rel="prefetch" href="/assets/js/26.35c43452.js"><link rel="prefetch" href="/assets/js/27.cbcd0bd4.js"><link rel="prefetch" href="/assets/js/28.445f49db.js"><link rel="prefetch" href="/assets/js/29.a3a8225a.js"><link rel="prefetch" href="/assets/js/30.6da0bf7b.js"><link rel="prefetch" href="/assets/js/31.1ad214cb.js"><link rel="prefetch" href="/assets/js/32.92bd43bc.js"><link rel="prefetch" href="/assets/js/33.e16167fc.js"><link rel="prefetch" href="/assets/js/34.3f96b3d4.js"><link rel="prefetch" href="/assets/js/35.94efffa2.js"><link rel="prefetch" href="/assets/js/36.bafbcf3f.js"><link rel="prefetch" href="/assets/js/37.6f25acbb.js"><link rel="prefetch" href="/assets/js/38.bbc4eb7a.js"><link rel="prefetch" href="/assets/js/39.0dc556c8.js"><link rel="prefetch" href="/assets/js/4.7af11f8f.js"><link rel="prefetch" href="/assets/js/40.36154957.js"><link rel="prefetch" href="/assets/js/41.311bcd28.js"><link rel="prefetch" href="/assets/js/42.d1cfa14d.js"><link rel="prefetch" href="/assets/js/43.65e296ec.js"><link rel="prefetch" href="/assets/js/44.e2b88a63.js"><link rel="prefetch" href="/assets/js/45.8cf6c50d.js"><link rel="prefetch" href="/assets/js/46.05c69c1d.js"><link rel="prefetch" href="/assets/js/47.1dc564ca.js"><link rel="prefetch" href="/assets/js/48.02fdca43.js"><link rel="prefetch" href="/assets/js/49.f5be74e3.js"><link rel="prefetch" href="/assets/js/5.f00d01c6.js"><link rel="prefetch" href="/assets/js/50.379bb6a8.js"><link rel="prefetch" href="/assets/js/51.83daf696.js"><link rel="prefetch" href="/assets/js/52.fcd14ded.js"><link rel="prefetch" href="/assets/js/53.a06ae42a.js"><link rel="prefetch" href="/assets/js/54.089e376e.js"><link rel="prefetch" href="/assets/js/55.84b39d19.js"><link rel="prefetch" href="/assets/js/56.956b5f5d.js"><link rel="prefetch" href="/assets/js/57.4009aacc.js"><link rel="prefetch" href="/assets/js/58.1e436b7f.js"><link rel="prefetch" href="/assets/js/59.1596f0ea.js"><link rel="prefetch" href="/assets/js/6.dadfa526.js"><link rel="prefetch" href="/assets/js/60.11f3a489.js"><link rel="prefetch" href="/assets/js/61.942b5897.js"><link rel="prefetch" href="/assets/js/62.c6a5c000.js"><link rel="prefetch" href="/assets/js/63.d923245f.js"><link rel="prefetch" href="/assets/js/64.ea91019c.js"><link rel="prefetch" href="/assets/js/65.0c314a77.js"><link rel="prefetch" href="/assets/js/66.9f782fbd.js"><link rel="prefetch" href="/assets/js/67.71e75249.js"><link rel="prefetch" href="/assets/js/68.10ff30c8.js"><link rel="prefetch" href="/assets/js/69.bb7204de.js"><link rel="prefetch" href="/assets/js/7.2ded2d0c.js"><link rel="prefetch" href="/assets/js/70.ec1be748.js"><link rel="prefetch" href="/assets/js/71.c4259ee6.js"><link rel="prefetch" href="/assets/js/72.5d1d999e.js"><link rel="prefetch" href="/assets/js/73.ed92364e.js"><link rel="prefetch" href="/assets/js/74.e8daae2f.js"><link rel="prefetch" href="/assets/js/75.4541493e.js"><link rel="prefetch" href="/assets/js/76.2e4b3177.js"><link rel="prefetch" href="/assets/js/78.e30d04e6.js"><link rel="prefetch" href="/assets/js/79.4c48f007.js"><link rel="prefetch" href="/assets/js/8.86b21130.js"><link rel="prefetch" href="/assets/js/80.19d3f54f.js"><link rel="prefetch" href="/assets/js/81.fb9f69e5.js"><link rel="prefetch" href="/assets/js/82.f443954c.js"><link rel="prefetch" href="/assets/js/83.9895f5f9.js"><link rel="prefetch" href="/assets/js/84.bf8da186.js"><link rel="prefetch" href="/assets/js/85.e0b784de.js"><link rel="prefetch" href="/assets/js/86.4d095ed9.js"><link rel="prefetch" href="/assets/js/87.34b19b4d.js"><link rel="prefetch" href="/assets/js/88.82051535.js"><link rel="prefetch" href="/assets/js/89.935520ef.js"><link rel="prefetch" href="/assets/js/9.4f724aba.js"><link rel="prefetch" href="/assets/js/90.d75c1876.js"><link rel="prefetch" href="/assets/js/91.1bab6961.js"><link rel="prefetch" href="/assets/js/92.2e4bd9a2.js"><link rel="prefetch" href="/assets/js/93.3aed17d2.js"><link rel="prefetch" href="/assets/js/94.f1312ba3.js"><link rel="prefetch" href="/assets/js/95.e1ddf5b9.js"><link rel="prefetch" href="/assets/js/96.d4567d03.js"><link rel="prefetch" href="/assets/js/97.4ff13e92.js"><link rel="prefetch" href="/assets/js/98.fb5affc0.js"><link rel="prefetch" href="/assets/js/99.d6814599.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4576dbc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">匠心博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/index.html" class="nav-link">博文</a></div><div class="nav-item"><a href="/book/index.html" class="nav-link">专栏</a></div><div class="nav-item"><a href="/note/index.html" class="nav-link">笔记</a></div><div class="nav-item"><a href="/nav/index.html" class="nav-link">导航</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">关于</a></div> <a href="https://github.com/zhaomenghuan" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/index.html" class="nav-link">博文</a></div><div class="nav-item"><a href="/book/index.html" class="nav-link">专栏</a></div><div class="nav-item"><a href="/note/index.html" class="nav-link">笔记</a></div><div class="nav-item"><a href="/nav/index.html" class="nav-link">导航</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">关于</a></div> <a href="https://github.com/zhaomenghuan" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="nodemcu-esp8266-arduino-框架学习">NodeMCU ESP8266 Arduino 框架学习</h1> <h2 id="前言">前言</h2> <p>在<a href="https://zhaomenghuan.js.org/blog/platformio-nodemcu-getting-started.html" target="_blank" rel="noopener noreferrer">《基于 PlatformIO 平台玩转 NodeMCU 入门篇》<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 一文中我们提到过 PlatformIO 平台 NodeMCU ESP8266 开发板可以基于 <a href="https://github.com/espressif/ESP8266_NONOS_SDK" target="_blank" rel="noopener noreferrer">ESP8266 Non-OS SDK<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://github.com/espressif/ESP8266_RTOS_SDK" target="_blank" rel="noopener noreferrer">ESP8266 RTOS SDK<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://github.com/esp8266/Arduino" target="_blank" rel="noopener noreferrer">Arduino<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://github.com/eerimoq/simba" target="_blank" rel="noopener noreferrer">Simba<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 四种框架进行开发，ESP8266 Non-OS SDK 和 ESP8266 RTOS SDK 是乐鑫官方提供的开发框架，属于原生框架，底层 API 相对更丰富，一般商业产品基于官方框架开发的更多，但是我们发现 ESP 社区中大量的示例是基于 Arduino 框架开发的，这样因为 Arduino 框架学习曲线比较平缓，支持它的第三方程序库非常多，这也是本文尝试用 Arduino 框架进行实战的原因。</p> <h2 id="arduino-core-for-esp8266">Arduino core for ESP8266</h2> <p>Arduino core for ESP8266 项目支持开发者使用熟悉的 Arduino 相关的函数、库，直接在 ESP8266 芯片上运行，而不需要额外的 MCU。ESP8266 Arduino core 内置库，可以基于 TCP 或 UDP 进行 WiFi 通信，可以设置 HTTP、mDNS、SSDP 和 DNS 服务器，可以进行 OAT 更新，在 Flash 中使用文件系统，与 SD 卡、Servo、SPI 和 IIC 外设一起工作。</p> <ul><li>GitHub：https://github.com/esp8266/Arduino</li> <li>Documentation：https://arduino-esp8266.readthedocs.io/en/latest/</li></ul> <h3 id="数字-io">数字 IO</h3> <p>Arduino 中的管脚号直接对应 ESP8266 GPIO 管脚号。Arduino 中有三个操作 IO 的函数：</p> <ul><li>pinMode：指定特定端口是作为输入还是输出；</li></ul> <div class="language- extra-class"><pre class="language-text"><code>void pinMode(uint8_t pin, uint8_t mode);
+</code></pre></div><p>digitalRead：
+digitalWrite：</p> <h2 id="web-server">Web Server</h2> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;ESP8266WiFi.h&gt;
+
+const char* ssid = &quot;******&quot;;
+const char* password = &quot;******&quot;;
+
+// Set web server port number to 80
+WiFiServer server(80);
+
+// Variable to store the HTTP request
+String header;
+
+// Auxiliar variables to store the current output state
+String ledButtonState = &quot;off&quot;;
+
+// Current time
+unsigned long currentTime = millis();
+// Previous time
+unsigned long previousTime = 0; 
+// Define timeout time in milliseconds (example: 2000ms = 2s)
+const long timeoutTime = 2000;
+
+void setup() {
+  Serial.begin(74880);
+  // Initialize the output variables as outputs
+  pinMode(LED_BUILTIN, OUTPUT);
+  // Set outputs to HIGH
+  digitalWrite(LED_BUILTIN, HIGH);
+
+  // Connect to Wi-Fi network with SSID and password
+  Serial.print(&quot;Connecting to &quot;);
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(&quot;.&quot;);
+  }
+  // Print local IP address and start web server
+  Serial.println(&quot;&quot;);
+  Serial.println(&quot;WiFi connected.&quot;);
+  Serial.println(&quot;IP address: &quot;);
+  Serial.println(WiFi.localIP());
+  server.begin();
+}
+
+void loop() {
+  WiFiClient client = server.available();   // Listen for incoming clients
+
+  if (client) {                             // If a new client connects,
+    Serial.println(&quot;New Client.&quot;);          // print a message out in the serial port
+    String currentLine = &quot;&quot;;                // make a String to hold incoming data from the client
+    currentTime = millis();
+    previousTime = currentTime;
+    while (client.connected() &amp;&amp; currentTime - previousTime &lt;= timeoutTime) { // loop while the client's connected
+      currentTime = millis();         
+      if (client.available()) {             // if there's bytes to read from the client,
+        char c = client.read();             // read a byte, then
+        Serial.write(c);                    // print it out the serial monitor
+        header += c;
+        if (c == '\n') {                    // if the byte is a newline character
+          // if the current line is blank, you got two newline characters in a row.
+          // that's the end of the client HTTP request, so send a response:
+          if (currentLine.length() == 0) {
+            // HTTP headers always start with a response code (e.g. HTTP/1.1 200 OK)
+            // and a content-type so the client knows what's coming, then a blank line:
+            client.println(&quot;HTTP/1.1 200 OK&quot;);
+            client.println(&quot;Content-type:text/html&quot;);
+            client.println(&quot;Connection: close&quot;);
+            client.println();
+            
+            // turns the GPIOs on and off
+            if (header.indexOf(&quot;GET /2/on&quot;) &gt;= 0) {
+              Serial.println(&quot;GPIO 2 on&quot;);
+              ledButtonState = &quot;on&quot;;
+              digitalWrite(LED_BUILTIN, LOW);
+            } else if (header.indexOf(&quot;GET /2/off&quot;) &gt;= 0) {
+              Serial.println(&quot;GPIO 2 off&quot;);
+              ledButtonState = &quot;off&quot;;
+              digitalWrite(LED_BUILTIN, HIGH);
+            }
+            
+            // Display the HTML web page
+            client.println(&quot;&lt;!DOCTYPE html&gt;&lt;html&gt;&quot;);
+            client.println(&quot;&lt;head&gt;&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1\&quot;&gt;&quot;);
+            client.println(&quot;&lt;link rel=\&quot;icon\&quot; href=\&quot;data:,\&quot;&gt;&quot;);
+            // CSS to style the on/off buttons 
+            // Feel free to change the background-color and font-size attributes to fit your preferences
+            client.println(&quot;&lt;style&gt;html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}&quot;);
+            client.println(&quot;.button { background-color: #195B6A; border: none; color: white; padding: 16px 40px;&quot;);
+            client.println(&quot;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}&quot;);
+            client.println(&quot;.button2 {background-color: #77878A;}&lt;/style&gt;&lt;/head&gt;&quot;);
+            
+            // Web Page Heading
+            client.println(&quot;&lt;body&gt;&lt;h1&gt;ESP8266 Web Server&lt;/h1&gt;&quot;);
+            
+            // Display current state, and ON/OFF buttons for GPIO2  
+            client.println(&quot;&lt;p&gt;GPIO 2 - State &quot; + ledButtonState + &quot;&lt;/p&gt;&quot;);
+            // If the output5State is off, it displays the ON button       
+            if (ledButtonState==&quot;off&quot;) {
+              client.println(&quot;&lt;p&gt;&lt;a href=\&quot;/2/on\&quot;&gt;&lt;button class=\&quot;button\&quot;&gt;ON&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;&quot;);
+            } else {
+              client.println(&quot;&lt;p&gt;&lt;a href=\&quot;/2/off\&quot;&gt;&lt;button class=\&quot;button button2\&quot;&gt;OFF&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;&quot;);
+            } 
+
+            client.println(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);
+            
+            // The HTTP response ends with another blank line
+            client.println();
+            // Break out of the while loop
+            break;
+          } else { // if you got a newline, then clear currentLine
+            currentLine = &quot;&quot;;
+          }
+        } else if (c != '\r') {  // if you got anything else but a carriage return character,
+          currentLine += c;      // add it to the end of the currentLine
+        }
+      }
+    }
+    // Clear the header variable
+    header = &quot;&quot;;
+    // Close the connection
+    client.stop();
+    Serial.println(&quot;Client disconnected.&quot;);
+    Serial.println(&quot;&quot;);
+  }
+}
+</code></pre></div><h2 id="参考">参考</h2> <ul><li><a href="https://randomnerdtutorials.com/esp8266-web-server/" target="_blank" rel="noopener noreferrer">Build an ESP8266 Web Server – Code and Schematics (NodeMCU)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://www.taichi-maker.com/homepage/iot-development/iot-dev-reference/esp8266-c-plus-plus-reference/" target="_blank" rel="noopener noreferrer">ESP8266-Arduino库 开发参考资料<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.4d6b7a5c.js" defer></script><script src="/assets/js/77.f8400e8a.js" defer></script>
+  </body>
+</html>
